@@ -23,7 +23,7 @@ function current_branch() {
 
 # Aliases
 alias g='git'
-alias gst='git status'
+alias gs='git status'
 alias gl='git pull'
 alias gup='git fetch && git rebase'
 alias gp='git push'
@@ -37,3 +37,5 @@ alias gba='git branch -a'
 alias gbr='git branch -r'
 alias gcount='git shortlog -sn'
 alias gcp='git cherry-pick'
+alias gcom='git checkout master'
+alias gco='git checkout'
