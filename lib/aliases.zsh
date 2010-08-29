@@ -21,7 +21,7 @@ alias -- -='cd -'
 
 # Super user
 alias _='sudo'
-alias ss='sudo su -'
+#alias ss='sudo su -'
 
 #alias g='grep -in'
 
