@@ -1,0 +1,5 @@
+alias ber='bundle exec rspec'
+alias bec='bundle exec cucumber'
+alias berb='bundle exec rspec -b'
+alias becb='bundle exec cucumber -b'
+alias bess='bundle exec script/server'
