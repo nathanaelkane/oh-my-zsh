@@ -74,7 +74,7 @@ function rvm_prompt_info() {
 }
 
 # %3~ # Shows 3 directories deep
-PROMPT='[%{${fg_bold[green]}%}%2~%{${reset_color}%}]%{${fg[yellow]}%}$(user_hostname) %{${fg[$(prompt_color)]}%}»%{${reset_color}%} '
+PROMPT='[%{${fg_bold[green]}%}%2~%{${reset_color}%}] %{${fg[$(prompt_color)]}%}»%{${reset_color}%} '
 RPROMPT='%{${fg_bold[cyan]}%}$(rvm_prompt_info)%{${reset_color}%} %{${fg_bold[yellow]}%}$(git_branch)%{${reset_color}%}$(git_stash)'
 
 PROMPT2="%{${fg[$(prompt_color)]}%}»%{${reset_color}%} "
