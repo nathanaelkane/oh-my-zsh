@@ -1,0 +1,21 @@
+[core]
+editor = mate -wl1
+excludesfile = ~/.gitignore
+
+[color]
+diff = auto
+branch = auto
+status = auto
+ui = auto
+
+[push]
+default = tracking
+  
+[merge]
+log = true
+conflictstyle = diff3
+
+[alias]
+lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+lgp = log -p --reverse --pretty=format:'%Cred%h%Creset - %Cblue(%an)%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
