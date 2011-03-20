@@ -16,6 +16,8 @@ alias devlog='tail -f log/development.log'
 # Basic directory operations
 alias .='pwd'
 alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias -- -='cd -'
 
 # Super user
@@ -36,3 +38,9 @@ alias sgem='sudo gem'
 alias rfind='find . -name *.rb | xargs grep -n'
 alias afind='ack-grep -il'
 
+# Misc
+alias sauce='source ~/.zshrc'
+alias dotfiles='source ~/.zshrc'
+alias mate='mvim'
+alias b='bundle install && /usr/local/Cellar/ctags/5.8/bin/ctags -R `rvm gemdir`'
+alias rsa='cat ~/.ssh/id_rsa.pub'
