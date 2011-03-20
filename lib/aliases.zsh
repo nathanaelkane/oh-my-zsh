@@ -20,9 +20,6 @@ alias -- -='cd -'
 
 # Super user
 alias _='sudo'
-#alias ss='sudo su -'
-
-#alias g='grep -in'
 
 # Show history
 alias history='fc -l 1'
@@ -39,15 +36,3 @@ alias sgem='sudo gem'
 alias rfind='find . -name *.rb | xargs grep -n'
 alias afind='ack-grep -il'
 
-# Git and svn mix
-alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
-
-# TextMate
-alias et='mate . &'
-alias ett='mate app config lib db public spec test Rakefile Capfile Todo &'
-alias etp='mate app config lib db public spec test vendor/plugins vendor/gems Rakefile Capfile Todo &'
-alias etts='mate app config lib db public script spec test vendor/plugins vendor/gems Rakefile Capfile Todo &'
-
-# Editor Ruby file in TextMate
-alias mr='mate CHANGELOG app config db lib public script spec test'
-alias rsyncap='rsync --archive --progress'
