@@ -54,6 +54,14 @@ function user_hostname {
   fi
 }
 
+function note_prompt {
+  if [[ -f .notes ]]
+  then
+    echo
+    sed "s/^/${fg_bold[red]}!${reset_color} /" .notes
+  fi
+}
+
 # get the name of the branch we are on
 function rvm_prompt_info() {
   if [[ -n "$rvm_path" ]]
@@ -89,3 +97,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="*"
 
 # The escape codes are surrounded by %{ and %}. These are zsh prompt escapes that tell the shell to disregard the contained characters when
 # determining the length of the prompt. This allows zsh to properly position the cursor.
+
+chpwd() {
+  note_prompt
+}
